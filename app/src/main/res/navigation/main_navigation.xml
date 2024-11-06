@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_shop">
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.sel.smartfood.ui.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/nav_shopping_cart"
+        android:name="com.sel.smartfood.ui.shopcart.ShopCartFragment"
+        android:label="fragment_shop_cart"
+        tools:layout="@layout/fragment_shop_cart" >
+        <action
+            android:id="@+id/action_nav_shopping_cart_to_choosePaymentServiceFragment"
+            app:destination="@id/choosePaymentServiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.sel.smartfood.ui.transaction.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction" >
+        <action
+            android:id="@+id/action_nav_transaction_to_choosePaymentServiceFragment"
+            app:destination="@id/choosePaymentServiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_shop"
+        android:name="com.sel.smartfood.ui.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" >
+        <action
+            android:id="@+id/action_nav_shop_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choosePaymentServiceFragment"
+        android:name="com.sel.smartfood.ui.transaction.ChoosePaymentServiceFragment"
+        android:label="ChoosePaymentServiceFragment" >
+        <action
+            android:id="@+id/action_choosePaymentServiceFragment_to_inputMoneyFragment"
+            app:destination="@id/inputMoneyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.sel.smartfood.ui.shop.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <argument
+            android:name="product_name"
+            app:argType="string"
+            android:defaultValue="Tên sản phẩm " />
+        <argument
+            android:name="product_price "
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="product_description"
+            app:argType="string"
+            android:defaultValue="Mô tả sản phẩm " />
+        <argument
+            android:name="product_pre_time"
+            app:argType="float"
+            android:defaultValue="0.0" />
+        <argument
+            android:name="product_ratingScore"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="product_image"
+            app:argType="string"
+            android:defaultValue="hình ảnh sản phẩm"/>
+        <action
+            android:id="@+id/action_productDetailFragment_to_nav_shopping_cart"
+            app:destination="@id/nav_shopping_cart" />
+        <argument
+            android:name="product_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/inputMoneyFragment"
+        android:name="com.sel.smartfood.ui.transaction.InputMoneyFragment"
+        android:label="InputMoneyFragment" >
+        <action
+            android:id="@+id/action_inputMoneyFragment_to_nav_transaction"
+            app:destination="@id/nav_transaction" />
+    </fragment>
+</navigation>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_shop"
+        android:icon="@drawable/ic_store_mall_directory_black_24dp"
+        android:title = "@string/nav_shop_title"/>
+    <item
+        android:id="@+id/nav_shopping_cart"
+        android:icon = "@drawable/ic_shopping_cart_black_24dp"
+        android:title = "@string/nav_shopping_cart_title"/>
+    <item
+        android:id = "@+id/nav_transaction"
+        android:icon = "@drawable/ic_payment_black_24dp"
+        android:title = "@string/nav_transaction_title"/>
+    <item
+        android:id="@+id/nav_info"
+        android:icon = "@drawable/ic_person_black_24dp"
+        android:title="@string/nav_info_title"/>
+</menu>

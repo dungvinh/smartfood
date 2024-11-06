@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admin_nav_shop"
+            android:icon="@drawable/ic_store_mall_directory_black_24dp"
+            android:title="@string/nav_shop_title" />
+        <item
+            android:id="@+id/admin_nav_statistics"
+            android:icon = "@drawable/ic_baseline_history_24"
+            android:title="@string/nav_admin_statistics"/>
+        <item
+            android:id="@+id/admin_log_out"
+            android:icon="@drawable/ic_logout"
+            android:title="Đăng xuất"/>
+    </group>
+
+</menu>

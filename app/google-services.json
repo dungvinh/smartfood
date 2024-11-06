@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "304369186492",
+    "firebase_url": "https://cnpm-262f3.firebaseio.com",
+    "project_id": "cnpm-262f3",
+    "storage_bucket": "cnpm-262f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304369186492:android:867589208893c19378c2b9",
+        "android_client_info": {
+          "package_name": "com.sel.smartfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304369186492-fchi7uu83s117p8cho5qcjoht1bpapfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sel.smartfood",
+            "certificate_hash": "ee964ca02516d620286b4fb2676e5abc88436aae"
+          }
+        },
+        {
+          "client_id": "304369186492-svf7ka6654o1poak0fb4c7cfhej7fd4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBvVLKEk25wjUkS_OwRZuDpo4eG7yezQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304369186492-svf7ka6654o1poak0fb4c7cfhej7fd4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/admin_nav_shop">
+
+    <fragment
+        android:id="@+id/admin_nav_shop"
+        android:name="com.sel.smartfood.ui.shop.ShopFragment"
+        android:label="Cửa hàng" >
+        <action
+            android:id="@+id/action_admin_nav_shop_to_fragmentUpdateProduct"
+            app:destination="@id/fragmentUpdateProduct" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/admin_nav_statistics"
+        android:name="com.sel.smartfood.ui.admin.FragmentStatistics"
+        android:label="Thống kê"/>
+    <fragment
+        android:id="@+id/fragmentUpdateProduct"
+        android:name="com.sel.smartfood.ui.admin.FragmentUpdateProduct"
+        android:label="Cập nhật món ăn" />
+    <argument
+            android:name="product_name"
+            app:argType="string"
+            android:defaultValue="Tên sản phẩm " />
+    <argument
+            android:name="product_price"
+            app:argType="integer"
+            android:defaultValue="0" />
+    <argument
+            android:name="product_description"
+            app:argType="string"
+            android:defaultValue="Mô tả sản phẩm" />
+    <argument
+            android:name="product_pre_time"
+            app:argType="float"
+            android:defaultValue="0.0" />
+    <argument
+            android:name="product_ratingScore"
+            app:argType="integer"
+            android:defaultValue="0" />
+    <argument
+            android:name="product_image"
+            app:argType="string"
+            android:defaultValue="hình ảnh" />
+    <argument
+            android:name="product_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+
+</navigation>
